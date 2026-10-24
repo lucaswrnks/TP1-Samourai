@@ -13,15 +13,15 @@ public class Humain {
 	}
 	
 	public void parler(String texte) {
-	System.out.println(nom + texte);
+	System.out.println(nom + " : " + texte);
 	}
 	
 	public void direBonjour() {
-		parler("Bonjour ! Je m’appelle" + this.nom + "et j’aime boire du" + this.boisson);
+		parler("Bonjour ! Je m’appelle " + this.nom + " et j’aime boire du " + this.boisson);
 		};
 	
 	public void boire() {
-		parler("Mmmm, un bon verre de" + this.boisson + "! GLOUPS !");
+		parler("Mmmm, un bon verre de " + this.boisson + " ! GLOUPS ! ");
 	};
 	
 	public int getArgent() {

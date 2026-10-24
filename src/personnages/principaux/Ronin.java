@@ -17,13 +17,14 @@ public class Ronin extends Humain {
 	};
 	
 	public void provoquer(Yakusa yakusa) {
-		if (2 * honneur >= yakusa.getReputation()) {
-			yakusa.perdreDuel();
+		if (2 * this.honneur >= yakusa.getReputation()) {
+			parler("Je t'ai eu petit yakusa " + yakusa.getNom() + " !");
 			int argentGagne = yakusa.perdreDuel();
 			gagnerArgent(argentGagne);
 			honneur++;
 		}
 		else{
+			parler("J'ai perdu contre le yakusa " + yakusa.getNom() + ", snif...");
 			yakusa.gagnerDuel();
 			honneur--;			
 		}

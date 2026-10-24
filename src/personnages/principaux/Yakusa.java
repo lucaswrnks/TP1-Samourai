@@ -41,8 +41,11 @@ public class Yakusa extends Humain {
 		
 	};
 	
+	@Override	
 	public void direBonjour() {
-		parler("Bonjour!");
+		super.direBonjour();
+		System.out.println("Mon clan est " + clan + " et je suis fier d'en faire partie !");
+		
 	};
 	
 };
